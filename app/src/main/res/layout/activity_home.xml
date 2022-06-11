@@ -1,0 +1,1719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:background="#F5F0ED">
+
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:onClick="productADD"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742"
+        app:srcCompat="@drawable/add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="229dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/name"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619">
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="375dp"
+        android:layout_height="593dp"
+        android:layout_marginTop="92dp"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/nested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="nested"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/blm1"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm1"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm1Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/testt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm1Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm1Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/blmtprkk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm1Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm1Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm1Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm2"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm2"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm2Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm2Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm2Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm2Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm2Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm2Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm3"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm3"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm3Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm3Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm3Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm3Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm3Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm3Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm4"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm4"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm4Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm4Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm4Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm4Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm4Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm4Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm5"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm5"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm5Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm5Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm5Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm5Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm5Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm5Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm6"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm6"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm6Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm6Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm6Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm6Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm6Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm6Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm7"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm7"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm7Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm7Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm7Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm7Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm7Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm7Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm8"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm8"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm8Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm8Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm8Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm8Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm8Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm8Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm9"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm9"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm9Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm9Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm9Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm9Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm9Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm9Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm10"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm10"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm10Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm10Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm10Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm10Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm10Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm10Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm11"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm11"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm11Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm11Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm11Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm11Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm11Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm11Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm12"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm12"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm12Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm12Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm12Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm12Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm12Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm12Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm13"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:onClick="blm13"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm13Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm13Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm13Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm13Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm13Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm13Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blm14"
+                android:layout_width="354dp"
+                android:layout_height="142dp"
+                android:layout_gravity="center"
+                android:background="@drawable/urun"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/blm14Img"
+                    android:layout_width="80dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cck" />
+
+                <LinearLayout
+                    android:layout_width="238dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/terr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/blm14Name"
+                            android:layout_width="185dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_weight="1"
+                            android:text="Lavanta"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/blm14Text"
+                        android:layout_width="196dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="1"
+                        android:text="Lavanta hakkında detaylı bilgi için tıkla."
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/tprk"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/toprak" />
+
+                        <TextView
+                            android:id="@+id/blm14Tprk"
+                            android:layout_width="27dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="Kil"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/su"
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/su" />
+
+                        <TextView
+                            android:id="@+id/blm14Su"
+                            android:layout_width="35dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="8 Lt"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/zmn"
+                            android:layout_width="39dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:srcCompat="@drawable/zaman" />
+
+                        <TextView
+                            android:id="@+id/blm14Zmn"
+                            android:layout_width="61dp"
+                            android:layout_height="26dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="3 Gün"
+                            android:textColor="#CB000000"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

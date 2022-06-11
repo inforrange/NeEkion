@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0ED"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="626dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/KSB"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/cicekler" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/papatya"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="KSB"
+                    app:srcCompat="@drawable/pptya" />
+
+                <ImageView
+                    android:id="@+id/akzambak"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="KSB"
+                    app:srcCompat="@drawable/zambak" />
+
+                <ImageView
+                    android:id="@+id/gelincik"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:background="@drawable/btn"
+                    android:onClick="KSB"
+                    app:srcCompat="@drawable/gelincik" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/siklamen"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="KSB"
+                    app:srcCompat="@drawable/siklamen" />
+
+                <ImageView
+                    android:id="@+id/begonya"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="KSB"
+                    app:srcCompat="@drawable/begonya" />
+
+                <ImageView
+                    android:id="@+id/kasimpati"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:background="@drawable/btn"
+                    android:onClick="KSB"
+                    app:srcCompat="@drawable/kasmpat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/OSB"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bitkiler" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/feslegen"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="OSB"
+                    app:srcCompat="@drawable/feslegen" />
+
+                <ImageView
+                    android:id="@+id/adacayi"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="OSB"
+                    app:srcCompat="@drawable/adacayi" />
+
+                <ImageView
+                    android:id="@+id/aloevera"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:background="@drawable/btn"
+                    android:onClick="OSB"
+                    app:srcCompat="@drawable/aloevera" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/zerdacal"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="OSB"
+                    app:srcCompat="@drawable/zerdacalpng" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/agaclar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bergamot"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="agc"
+                    app:srcCompat="@drawable/bergamot" />
+
+                <ImageView
+                    android:id="@+id/goknar"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:background="@drawable/btn"
+                    android:onClick="agc"
+                    app:srcCompat="@drawable/goknar" />
+
+                <ImageView
+                    android:id="@+id/akcagac"
+                    android:layout_width="115dp"
+                    android:layout_height="108dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:background="@drawable/btn"
+                    android:onClick="agc"
+                    app:srcCompat="@drawable/akcagac" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:orientation="horizontal" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
