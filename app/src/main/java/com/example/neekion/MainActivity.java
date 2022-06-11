@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             database.execSQL("INSERT INTO Bitki (ID,save,htrltc,name,toprakturu,sumiktari,sulamasklg,info) VALUES('"+ID+"',0,0,'"+name+"','"+tprk+"','"+su+"','"+zmn+"','"+bilgi+"')");
             getData();
-            Toast.makeText(getApplicationContext(), "VERİ EKLENDİ",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "VERİ EKLENDİ",Toast.LENGTH_SHORT).show();
             System.out.println("DBADD");
         }catch (Exception e){
             e.printStackTrace();
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 if (ppty !=1) {
                     DBadd(1, "Papatya", "Killi", "0.75Lt", "Günde 1 defa", "Papatya, papatyagiller familyasında sınıflandırılan Anthemis, Matricaria, Bellis, \n" +
                             "Leucanthemum ve Tripleurospermum gibi farklı cinslerden bitki türlerine verilen ortak ad.\n");
-                    Toast.makeText(getApplicationContext(), "1ADD", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(getApplicationContext(), "1ADD", Toast.LENGTH_SHORT).show();
                 }
                 bitki = new Intent(MainActivity.this,bitki.class);
                 bitki.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);

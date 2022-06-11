@@ -918,7 +918,7 @@ public class home extends AppCompatActivity {
         try {
             database.execSQL("INSERT INTO Bitki (ID,save,htrltc,name,toprakturu,sumiktari,sulamasklg,info) VALUES(1,0,0,'Papatya','Killi Toprak','0.75Lt','Günde 1 defa','Papatya, papatyagiller familyasında sınıflandırılan Anthemis, Matricaria, Bellis,Leucanthemum ve Tripleurospermum gibi farklı cinslerden bitki türlerine verilen ortak ad.')");
             getData();
-            Toast.makeText(getApplicationContext(), "VERİ EKLENDİ",Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "VERİ EKLENDİ",Toast.LENGTH_SHORT).show();
             System.out.println("DBADD");
         }catch (Exception e){
             e.printStackTrace();
